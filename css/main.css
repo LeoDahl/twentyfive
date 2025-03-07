@@ -1,0 +1,101 @@
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        margin:0;
+        grid-template-areas: 
+        "he he he"
+        "ma ma ma"
+        "se se se";
+        background-image: url('/img/Bg.png');  
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    
+    header {
+        display:flex;
+        justify-content: space-between;
+        height: 10vh;
+        grid-area: he;
+    }
+    main {
+        height: 100vh;
+        grid-area: ma;
+
+    }
+    logo {
+        width: 100%;
+        z-index: 2;
+    }
+    logo p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        color: white;
+    }
+    
+    .hamburger {
+        margin-top: 5px;
+        margin-right: 5px;
+        border: none;
+        background-color: rgba(255, 222, 173, 0);
+        height: 90%;
+        width: 15%;
+        background-image: url('/img/Hamburger.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .seeMore {
+        border: solid 0px;
+        box-shadow:  2px 2px 2px;
+        width: 40%;
+        height: 20%;
+        border-radius: 5px;
+    }
+    .Services {
+        grid-area: se;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30vh;
+        height: 40vh;
+        text-align: center;
+    }
+    .Services h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .CalltoAction p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    
+}
+.CalltoAction {
+    width: 95%;
+    height: 40%;
+    margin-top: 5%;
+    padding: 5px;
+}
+li {
+    display: flex;
+    justify-content: start;
+}
+li img {
+    width: 35px;
+    height: 35px;
+}
+li p {
+    padding-left: 50px;
+}
+.CalltoAction h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.CalltoAction p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
