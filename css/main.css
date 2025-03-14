@@ -9,6 +9,8 @@
         background-image: url('/img/Bg.png');  
         background-repeat:no-repeat;
         background-size: cover;
+        width: 100%;
+        
     }
     
     header {
@@ -16,9 +18,10 @@
         justify-content: space-between;
         height: 10vh;
         grid-area: he;
+        
     }
     main {
-        height: 100vh;
+        height: 70vh;
         grid-area: ma;
 
     }
@@ -33,6 +36,15 @@
         font-family: Arial, Helvetica, sans-serif;
         
         color: white;
+    }
+    .ServiceDiv {
+        width: 100px;
+        display: flex;
+        text-align: left;
+        align-items: top;
+        justify-content: left;
+        flex-direction: column;
+        height: 30px;
     }
     
     .hamburger {
@@ -51,22 +63,50 @@
         border: solid 0px;
         box-shadow:  2px 2px 2px;
         width: 40%;
-        height: 20%;
+        height: 35px;
         border-radius: 5px;
     }
     .Services {
         grid-area: se;
         display: flex;
-        flex-direction: column;
-        margin-top: 30vh;
-        height: 40vh;
-        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        
+        width: 100vw;
+        gap: 0px;
+        margin-bottom: 30px;
+        
+    }
+    .Services h1 {
+        
+        font-weight: lighter;
+        width: 400px;
+    }
+    .Services img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40px;
+        height: 40px;
+        padding-left: 20px;
     }
     .Services h1{
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+        
     }
+    .Services p{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+        
+    }
+
     .CalltoAction p{
+        
         font-family: Arial, Helvetica, sans-serif;
         color: white;
     }
@@ -79,17 +119,8 @@
     margin-top: 5%;
     padding: 5px;
 }
-li {
-    display: flex;
-    justify-content: start;
-}
-li img {
-    width: 35px;
-    height: 35px;
-}
-li p {
-    padding-left: 50px;
-}
+
+
 .CalltoAction h1{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -99,3 +130,41 @@ li p {
     color: white;
 }
 
+
+.promise {
+    background-color: white;
+    width: 100vw;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(194, 9, 83);
+}
+
+
+
+
+.partner {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 20s linear infinite;
+    width: 100vw;
+    left: 100%;
+    overflow-x:hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+.partner img {
+    
+    width: 100%;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        left:100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
