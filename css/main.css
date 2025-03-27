@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Manrope;
+    src: url(/misc/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
         display: grid;
@@ -5,23 +11,37 @@
         grid-template-areas: 
         "he he he"
         "ma ma ma"
-        "se se se";
-        background-image: url('/img/Bg.png');  
+        "se se se"
+        "pa pa pa"
+        "ft ft ft";
+        background-color:hsla(0,0%,100%,1);
+        background-image:
+        radial-gradient(at 100% 95%, hsla(240,0%,100%,1) 0px, transparent 50%),
+        radial-gradient(at 49% 43%, hsla(343,100%,76%,0.46) 0px, transparent 50%);
         background-repeat:no-repeat;
         background-size: cover;
         width: 100%;
+        height: 100vh;
         
     }
     
     header {
         display:flex;
         justify-content: space-between;
-        height: 10vh;
+        align-items: center;
+        height: 7vh;
         grid-area: he;
+        border-bottom:#5151510a 3px solid;
+        margin-bottom: 15px;
         
     }
+    header h1 {
+        text-align: center;
+        margin-left: 10px;
+        font-family: Manrope;
+    }
     main {
-        height: 70vh;
+        height: 75vh;
         grid-area: ma;
 
     }
@@ -35,7 +55,7 @@
         font-size: 1.3em;
         font-family: Arial, Helvetica, sans-serif;
         
-        color: white;
+        color: black;
     }
     .ServiceDiv {
         width: 100px;
@@ -44,14 +64,14 @@
         align-items: top;
         justify-content: left;
         flex-direction: column;
-        height: 30px;
+        height: 60px;
     }
     
     .hamburger {
         margin-top: 5px;
         margin-right: 5px;
         border: none;
-        background-color: rgba(255, 222, 173, 0);
+        background-color: rgba(0, 0, 0, 0);
         height: 90%;
         width: 15%;
         background-image: url('/img/Hamburger.png');
@@ -60,111 +80,188 @@
         background-position: center;
     }
     .seeMore {
-        border: solid 0px;
-        box-shadow:  2px 2px 2px;
-        width: 40%;
-        height: 35px;
-        border-radius: 5px;
+        width: 70%;
+        height: 70px;
+        margin-top:5px;
+        font-size: 1.2em;
+    }
+    .gradient {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px 1px solid black;
+        border: solid 2px rgb(237, 187, 219);
+        border-radius: 10px;
+        background-image: linear-gradient(to right, #eda8db 30%, #9d84f1  100%)
+    }
+    .secondary {
+        background-color: white;
+        border: solid 2px rgb(216, 216, 216);
+        border-radius: 10px;
     }
     .Services {
+        background-color: white;
         grid-area: se;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: start;
         
-        width: 100vw;
+        width: 80%;
+        height: 50%;
         gap: 0px;
-        margin-bottom: 30px;
+        border-radius: 10px;
+        margin: 30px 10px 20px 0px;
+        padding: 15px;
         
-    }
-    .Services h1 {
-        
-        font-weight: lighter;
-        width: 400px;
     }
     .Services img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 40px;
-        height: 40px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right:10%;
+        width: 50px;
+        height: 50px;
         padding-left: 20px;
     }
+
+   
     .Services h1{
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        text-align: center;
-        font-size: 20px;
+        font-family: Manrope;
+        color: rgb(21, 21, 21);
+        text-align: start;
+        font-size: 30px;
         margin: 10px;
         
     }
     .Services p{
-        margin: 0px;
+        font-size: 1.2rem;
+        margin: 10px;
         font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        text-align: center;
+        color: rgb(48, 48, 48);
+        
         
     }
 
     .CalltoAction p{
-        
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: black;
     }
     
     
 }
 .CalltoAction {
-    width: 95%;
+    width: 100%;
     height: 40%;
-    margin-top: 5%;
-    padding: 5px;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
+.heroimage {
+    width: 300px;
+    height: 300px;
+    
+    background-repeat: none;
+    background-size:cover;
+    border-radius: 100%;
+    border: 5px solid rgb(240, 211, 241);
+    
+}
 
 .CalltoAction h1{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(24, 20, 20);
+    font-size: 2.5em;
+    margin: 0;
 }
 .CalltoAction p{
+    margin: 10;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(17, 13, 13);
+    font-size: 1.4em;
 }
 
 
 .promise {
-    background-color: white;
+    border-top: 3px solid rgb(243, 223, 236);
+    margin-top: 50px;
+    background-color:hsla(321,45%,91%,1);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(288,57%,85%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(340,67%,88%,1) 0px, transparent 50%);
+ 
     width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    
 }
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: manrope;
     text-align: center;
-    font-size: 25px;
-    color: rgb(194, 9, 83);
+    font-size: 2rem;
+    color: rgb(18, 18, 18);
 }
 
-
-
-
-.partner {
+.partners {
+    background-color:hsla(0,0%,100%,1);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(277,100%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(340,100%,96%,1) 0px, transparent 50%);
     display: flex;
-    justify-content: space-around;
-    animation: scroll-horizontal 20s linear infinite;
-    width: 100vw;
-    left: 100%;
-    overflow-x:hidden;
-    position: absolute;
-    white-space: nowrap;
-}
-.partner img {
-    
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+
+
+
+    grid-area: pa;
+    border-top: 4px solid #e8bcdb;
+    background-color: white;
+    height: 55vh;
     width: 100%;
 }
 
-@keyframes scroll-horizontal {
-    0% {
-        left:100%;
-    }
-    100% {
-        left: -100%;
-    }
+.partnerimg {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: contain;
+   
+    
+    
+    width: 90%;
+    height: 20%;
+}
+
+footer {
+    grid-area:ft;
+    width: 100%;
+    height: 25vh;
+    background-color:#eac9f3;
+}
+
+footer h1 {
+    font-size: 1.5em;
+    margin: 10px;
+    font-family: manrope;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 1.1em;
+    font-family: manrope;
+}
+
+footer .copy {
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
 }
