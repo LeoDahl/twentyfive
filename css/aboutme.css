@@ -11,15 +11,9 @@
         grid-template-areas: 
         "he he he"
         "ma ma ma"
-        "se se se"
-        "pa pa pa"
         "ft ft ft";
         background-color:hsla(0,0%,100%,1);
-        background-image:
-        radial-gradient(at 100% 95%, hsla(240,0%,100%,1) 0px, transparent 50%),
-        radial-gradient(at 49% 43%, hsla(343,100%,76%,0.46) 0px, transparent 50%);
-        background-repeat:no-repeat;
-        background-size: cover;
+        
         width: 100%;
         height: 100vh;
         
@@ -32,7 +26,6 @@
         height: 7vh;
         grid-area: he;
         border-bottom:#5151510a 3px solid;
-        margin-bottom: 15px;
         
     }
     header h1 {
@@ -41,9 +34,33 @@
         font-family: Manrope;
     }
     main {
-        height: 75vh;
+        background-color:rgb(255, 255, 255);
+        background-image:
+        radial-gradient(at 80% 100%, rgba(252, 168, 225, 0.133) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, rgba(255, 133, 168, 0.293) 0px, transparent 50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
         grid-area: ma;
 
+    }
+    main h1 {
+        font-family: Manrope;
+        margin-bottom: 10px;
+    }
+    main h2 {
+        font-size: 1.5em;
+        font-family: Manrope;
+    }
+    main p {
+        margin: 35px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        font-family: manrope;
+        color: black;
+        font-weight: 400;
+        line-height: 30px;
     }
     logo {
         width: 100%;
@@ -85,6 +102,8 @@
         font-family: Manrope;
         font-weight: bold;
         font-size: 1.2em;
+        color: black;
+        text-decoration: none;
 
         width: 70%;
         height: 40px;
@@ -102,112 +121,27 @@
         border: solid 2px rgb(216, 216, 216);
         border-radius: 10px;
     }
-    .Services {
-        background-color: white;
-        grid-area: se;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        
-        width: 80%;
-        height: 50%;
-        gap: 0px;
-        border-radius: 10px;
-        margin: 0px 0px 20px 0px;
-        padding: 15px;
-        
-    }
-    .Services img {
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-right:10%;
-        width: 50px;
-        height: 50px;
-        padding-left: 20px;
-    }
+    
 
-   
-    .Services h1{
-        font-family: Manrope;
-        color: rgb(21, 21, 21);
-        text-align: start;
-        font-size: 30px;
-        margin: 10px;
-        
-    }
-    .Services p{
-        font-size: 1.2rem;
-        margin: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(48, 48, 48);
-        
-        
-    }
-
-    .CalltoAction p{
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-    }
     
     
     
-}
-.CalltoAction {
-    width: 100%;
-    height: 40%;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 .heroimage {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 230px;
     
     background-repeat: none;
     background-size:cover;
-    border-radius: 100%;
-    border: 5px solid rgb(240, 211, 241);
+    border-radius: 5%;
+    border: 5px solid rgba(240, 211, 241, 0.549);
     
 }
 
-.CalltoAction h1{
-    text-align: center;
-    font-family: Manrope;
-    color: rgb(24, 20, 20);
-    font-size: 1.7em;
-    margin: 0;
-}
-.CalltoAction p{
-    margin: 10;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500px;
-    color: rgb(30, 30, 30);
-    font-size: 1.2em;
-}
 
 
-.promise {
-    border-top: 3px solid rgb(243, 223, 236);
-    margin-top: 30%;
-    background-color:hsla(321,45%,91%,1);
-    background-image:
-    radial-gradient(at 80% 100%, hsla(288,57%,85%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(340,67%,88%,1) 0px, transparent 50%);
- 
-    width: 100vw;
-    height: 145vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
 
-    
-}
 h2 {
     font-family: manrope;
     text-align: center;
@@ -237,7 +171,7 @@ h2 {
 .partnerimg {
     background-color: white;
     border: 2px solid rgba(0, 0, 0, 0.123);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     object-fit: contain;
     margin-bottom:10px;
