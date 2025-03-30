@@ -3,6 +3,9 @@
     src: url(/misc/Manrope/Manrope-VariableFont_wght.ttf);
 }
 
+body {
+    margin: 0;
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -64,7 +67,7 @@
         align-items: top;
         justify-content: left;
         flex-direction: column;
-        height: 60px;
+        height: 400px;
     }
     
     .hamburger {
@@ -79,6 +82,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     .seeMore {
         text-align: center;
         line-height: 40px;
@@ -110,7 +114,7 @@
         align-items: start;
         
         width: 80%;
-        height: 50%;
+        height: 80%;
         gap: 0px;
         border-radius: 10px;
         margin: 0px 0px 20px 0px;
@@ -155,7 +159,7 @@
 .CalltoAction {
     width: 100%;
     height: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,20 +197,27 @@
 
 .promise {
     border-top: 3px solid rgb(243, 223, 236);
-    margin-top: 30%;
+    margin-top: 5%;
     background-color:hsla(321,45%,91%,1);
     background-image:
     radial-gradient(at 80% 100%, hsla(288,57%,85%,1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(340,67%,88%,1) 0px, transparent 50%);
  
     width: 100vw;
-    height: 145vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
    
 
     
+}
+.promiseflex {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
 }
 h2 {
     font-family: manrope;
@@ -218,7 +229,7 @@ h2 {
 .partners {
     background-color:hsla(0,0%,100%,1);
     background-image:
-    radial-gradient(at 80% 100%, hsla(277,100%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(277,100%,95%,1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(340,100%,96%,1) 0px, transparent 50%);
     display: flex;
     flex-direction: column;
@@ -228,7 +239,7 @@ h2 {
 
 
     grid-area: pa;
-    border-top: 4px solid #e8bcdb;
+    border-top: 4px solid #ff53cb25;
     background-color: white;
     height: 55vh;
     width: 100%;
@@ -240,7 +251,7 @@ h2 {
     border-radius: 10px;
     margin: 10px;
     object-fit: contain;
-    margin-bottom:10px;
+    margin-bottom:20px;
     
     
     width: 90%;
@@ -250,7 +261,7 @@ h2 {
 footer {
     grid-area:ft;
     width: 100%;
-    height: 100%;
+    height: 10%;
     background-color:#f4e5f5;
     border-top: 5px solid #efdcf4;
 }
@@ -272,3 +283,159 @@ footer .copy {
     font-weight: bold;
     text-align: center;
 }
+
+@media only screen and (min-width: 601px) {
+    body {
+        background-color:hsla(0,0%,100%,1);
+        background-image:
+        radial-gradient(at 50% 65%, hsla(240,0%,100%) 0px, transparent 1%),
+        radial-gradient(at 10% 15%, rgba(216, 123, 150, 0.085) 100px, transparent 100%);
+        background-repeat:no-repeat;
+        background-size: cover;
+        
+        
+    }
+    main {
+        height: 10vh;
+        grid-area: ma;
+    }
+    header {
+        background-color: #ffffff;
+        margin: 0px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vh;
+        grid-area: he;
+        border-bottom:#5151510a 3px solid;
+        margin-bottom: 15px;
+        
+    }
+    header h1 {
+        text-align: center;
+        margin-left: 10px;
+        font-family: Manrope;
+    }
+    .hamburger {
+        margin-top: 5px;
+        margin-right: 5px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        height: 32px;
+        width: 64px;
+        background-image: url('/img/Hamburger.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heroimage {
+        width: 300px;
+        height: 300px;
+        
+        background-repeat: none;
+        background-size:cover;
+        border-radius: 100%;
+        border: 5px solid rgb(240, 211, 241);
+        
+    }
+    .seeMore {
+        text-align: center;
+        line-height: 50px;
+        font-family: Manrope;
+        font-weight: bold;
+        font-size: 1.2em;
+        border: 2px rgb(98, 98, 98) solid;
+        width: 15%;
+        border-radius: 10px;
+        height: 50px;
+        margin-top:5px;
+    }
+    .gradient {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px 1px solid black;
+        border: solid 2px rgb(237, 182, 216);
+        border-radius: 10px;
+        background-image: linear-gradient(to right, #eda8db 30%, #9d84f1  100%)
+    }
+    .promise {
+        border-top: 4px solid #ff53cb5e;
+        background-color:rgb(255, 255, 255);
+        background-image:
+        radial-gradient(at 50% 65%, hsla(240,0%,100%) 0px, transparent 1%),
+        radial-gradient(at 10% 15%, rgba(255, 3, 74, 0.188) 100px, transparent 100%);
+        width: 100%;
+        height: 40vh;
+    }
+    .promise h1 {
+        font-family: Manrope;
+    }
+    .promise p {
+     font-family: Manrope;
+    }
+    .promiseflex {
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px
+    }
+    .partners {
+        background-color:hsla(0,0%,100%,1);
+        background-image:
+        radial-gradient(at 80% 100%, hsla(277,100%,95%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(340,100%,96%,1) 0px, transparent 50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    
+    
+        grid-area: pa;
+        border-top: 4px solid #ff53cb25;
+
+        background-color: white;
+        height: 55vh;
+        width: 100%;
+    }
+    .Services {
+        background-color: white;
+        grid-area: se;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.362);
+        width: 25%;
+        height: 70%;
+        gap: 5px;
+        border-radius: 10px;
+        margin: 0px 0px 20px 0px;
+        padding: 15px;
+        
+    }
+    .Services img {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right:10%;
+        width: 42px;
+        height: 42px;
+        padding-left: 20px;
+    }
+    .Services p {
+        width: 100%;
+        height: 70%;
+    }
+    .partnerimg {
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.123);
+        border-radius: 10px;
+        margin: 10px;
+        object-fit: contain;
+        margin-bottom:30px;
+        
+        
+        width: 30%;
+        height: 25%;
+    }
+}
+
