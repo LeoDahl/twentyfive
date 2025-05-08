@@ -1,0 +1,59 @@
+.projekt:hover img {
+    transition: transform 1s ease;
+    filter: opacity(80%);
+    filter: grayscale(0.5) sepia(1) hue-rotate(-65deg) saturate(2);
+    transform: scale(1.01);
+}
+
+.projekt img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 35px 35px 0px 0px;
+}
+
+.projekt:hover img {
+    transition: transform 1s ease;
+    filter: opacity(80%);
+    filter: grayscale(0.5) sepia(1) hue-rotate(-65deg) saturate(2);
+    transform: scale(1.01);
+}
+
+.projekt:hover {
+    transition: transform 0.1s ease;
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    font-family: Manrope;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    color: rgb(18, 18, 18);
+}
+#mainText h1 {
+    font-family: Manrope;
+    color: rgb(24, 20, 20);
+    font-size: clamp(2rem, 5vw, 4em);
+    margin: 0;
+}
+#mainText p {
+    margin: 10;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    color: rgb(30, 30, 30);
+    font-size: clamp(1rem, 2vw, 1.6em);
+}
+.projekt {
+    font-family: Manrope;
+}
+footer p {
+    text-align: center;
+    font-family: Manrope;
+}
+footer {
+        grid-area: ft;
+        width: 100%;
+        height: 100%;
+        background-color: #f4e5f5;
+    }

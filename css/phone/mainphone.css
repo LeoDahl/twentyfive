@@ -1,0 +1,349 @@
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        margin: 0;
+        grid-template-areas: 
+            "he he he"
+            "ma ma ma"
+            "se se se"
+            "pa pa pa"
+            "ft ft ft";
+        background-color: hsla(0, 0%, 100%, 1);
+        background-color: #fcecf4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-template-rows: 7vh 93vh 100vh 60vh 30vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    #partnerGrid {
+        width: 50%;
+        height: 50%;
+    }
+
+    .unv {
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        grid-area: he;
+        border-bottom: #5151510a 3px solid;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-left: 10px;
+        font-family: Manrope;
+    }
+
+    main {
+        height: 100%;
+        grid-area: ma;
+    }
+
+    logo {
+        width: 100%;
+        z-index: 2;
+    }
+
+    logo p {
+        
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    #mainText {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainText img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20%;
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px 10px rgba(198, 195, 195, 0.547);
+        order: -1; /* Moves the image above the h1 */
+    }
+
+    #mainText h1 {
+        font-family: Manrope;
+        color: rgb(24, 20, 20);
+        font-size: clamp(2rem, 5vw, 4em);
+        margin: 0;
+    }
+
+    .ServiceDiv {
+        width: 100px;
+        display: flex;
+        text-align: left;
+        align-items: top;
+        justify-content: left;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .hamburger {
+        margin-top: 5px;
+        margin-right: 5px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        height: 90%;
+        width: 15%;
+        background-image: url('/img/Hamburger.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .seeMore {
+        text-align: center;
+        line-height: 40px;
+        font-family: Manrope;
+        font-weight: bold;
+        font-size: 1.2em;
+        width: 70%;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .gradient {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px 1px solid black;
+        border: solid 2px rgb(237, 187, 219);
+        border-radius: 10px;
+        background-image: linear-gradient(to right, #eda8db 30%, #9d84f1 100%);
+    }
+
+    .secondary {
+        background-color: white;
+        border: solid 2px rgb(216, 216, 216);
+        border-radius: 10px;
+    }
+
+    .Services {
+        background-color: white;
+        grid-area: se;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 85%;
+        height: 90%;
+        gap: 0px;
+        border-radius: 10px;
+        margin: 0px 0px 20px 0px;
+        padding: 15px;
+    }
+
+    .Services img {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 10%;
+        width: 50px;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    .Services h1 {
+        font-family: Manrope;
+        color: rgb(21, 21, 21);
+        text-align: start;
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .Services p {
+        font-size: 1.2rem;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(48, 48, 48);
+    }
+
+    .CalltoAction p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    #showcase {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 40%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .projekt {
+        background-color: white;
+        box-shadow: 3px 1px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 35px;
+        height: 550px;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projekt img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 35px 35px 0px 0px;
+    }
+
+    .projekt:hover img {
+        transition: transform 1s ease;
+        filter: opacity(80%);
+        filter: grayscale(0.5) sepia(1) hue-rotate(-65deg) saturate(2);
+        transform: scale(1.01);
+    }
+
+    .projekt:hover {
+        transition: transform 0.1s ease;
+        transform: scale(1.01);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .projekt h1 {
+        font-family: Manrope;
+        margin-left: 20px;
+    }
+
+    .projekt p {
+        font-family: Manrope, Helvetica, sans-serif;
+        margin-left: 20px;
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+
+    .CalltoAction {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: #faf3f7;
+    }
+
+    #partnerGrid {
+        width: 50%;
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .heroimage {
+        width: 200px;
+        height: 200px;
+        background-repeat: none;
+        background-size: cover;
+        border-radius: 100%;
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 50px rgb(0, 0, 0);
+    }
+
+    .CalltoAction h1 {
+        font-family: Manrope;
+        color: rgb(24, 20, 20);
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .CalltoAction p {
+        margin: 10;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500px;
+        color: rgb(30, 30, 30);
+        font-size: 1.6em;
+    }
+
+    .promise {
+        background-color: #ccbcec;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promiseflex {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h2 {
+        font-family: Manrope;
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        color: rgb(18, 18, 18);
+    }
+
+    .partners {
+        background-color: #ecbcd8;
+        display: flex;
+        flex-direction: column;
+        grid-area: pa;
+        background-color: white;
+        width: 100%;
+        height: 90%;
+    }
+
+    .Services h2,
+    .partners h2 {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+    }
+
+    .partnerimg {
+        background-color: white;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        grid-area: ft;
+        width: 100%;
+        height: 100%;
+        background-color: #f4e5f5;
+    }
+
+    footer h1 {
+        font-size: 1.5em;
+        margin: 10px;
+        font-family: Manrope;
+    }
+
+    footer p {
+        margin: 10px;
+        font-size: 1.1em;
+        font-family: Manrope;
+    }
+
+    footer .copy {
+        margin-top: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
