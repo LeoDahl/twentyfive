@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-    <link rel="stylesheet" href="/css/identical.css">
+  <link rel="stylesheet" href="/css/identical.css">
   <link rel="stylesheet" href="/css/aboutme.css">
 </head>
 <body>
   <header>
-    <h1>LeoDahl.se</h1>
-    <button class="hamburger"></button>
+    <a href="index.html">LeoDahl.se</a>
+    <img class="menu_button hamburger">
+
+    <nav>
+      <a href="/aboutme.html">Om oss</a>
+      <a href="/contact.html">Kontakta mig!</a>
+      <a href="/FAQ.html">FAQ</a>
+    </nav>
   </header>
   <main>
-    <img class="heroimage" src="img/Test2.png"><img>
+    <img class="heroimage" src="img/Photoshop.png"><img>
     <h1> Hej! Jag heter Leo</h1>
     <h2>Om mig!</h2>
     <p>Hej! Jag heter Leo Dahl och har arbetat med webbdesign i tre år. Jag brinner för att skapa stilrena, funktionella och användarvänliga webbplatser som inte bara ser bra ut utan också ger en smidig upplevelse. Med en kombination av kreativt tänkande och teknisk precision strävar jag alltid efter att bygga moderna och responsiva lösningar som anpassar sig efter användarnas behov.
@@ -25,7 +31,14 @@
     </p>
   </main>
   
-  <section class="awards">
+  <aside class="burgernav">
+    <a href="/aboutme.html">Om oss</a>
+    <a href="/contact.html">Kontakta mig!</a>
+    <a href="/FAQ.html">FAQ</a>
+
+  </aside>
+
+  <aside class="awards">
     <h1>Certifikationer</h1>
     <div class="awardssection">
       <div class="cert">
@@ -41,7 +54,7 @@
         <h2>JS certified</h2>
       </div>
     </div>
-  </section>
+  </aside>
   <footer>
       <h1>Kontakt</h1>
       <p>Telefon: 0701010101</p>
@@ -50,6 +63,7 @@
       <p>
       <p class="copy">© 2025 LeoDahl.se. Alla rättigheter reserverade.</p>
   </footer>
-  
+  <script src="js/hamburger.js"></script>
+
 </body>
 </html>
