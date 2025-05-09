@@ -82,6 +82,8 @@ footer {
         left: 100vw;
         display: flex;
         flex-direction: column;
+
+        transition: 0.5s;
     }
     header a {
         text-align: center;
