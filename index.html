@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <link rel="stylesheet" href="/css/identical.css">
+  <link rel="stylesheet" href="/css/phone/mainphone.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -13,12 +15,16 @@
   </header>
   <main class="CalltoAction">
    
+      <div id="mainText">
+        <h1>Webbutveckling när det verkligen behövs</h1>
+        
+        <p>Jag designar och utvecklar moderna, användarvänliga webbplatser som hjälper ditt företag att växa och stå ut från konkurrenterna.</p>
+        <a href="contact.html" class="seeMore gradient">Kontakta idag!!</a>
+        <a href="/aboutme.html" class="seeMore secondary">Om mig</a>
+        <a  class="seeMore secondaty " href="/FAQ.html">FAQ</a>
+      </div>
       <img alt="Bild på Leo Dahl" class="heroimage" src="/img/Namnlös.png">
-      <h1>Webbutveckling när det verkligen behövs</h1>
-      <p>Jag designar och utvecklar moderna, användarvänliga webbplatser som hjälper ditt företag att växa och stå ut från konkurrenterna.</p>
-      <a href="contact.html" class="seeMore gradient">Kontakta idag!!</a>
-      <a href="/aboutme.html" class="seeMore secondary">Om mig</a>
-      <a  class="seeMore secondaty " href="/FAQ.html">FAQ</a>
+
       
  
   </main>
@@ -47,20 +53,35 @@
     
     
   </section>
+  
   <section class="partners">
-    <h2>Partners</h2>
-
-    <div id="partnerGrid">
-      <img alt="vedgbg logo" class="partnerimg" src="img/VedGBG.png">
-      <img alt="mcdonalds logo" class="partnerimg" src="img/mcdonalds.png">
-      <img alt="coca cola logo" class="partnerimg" src="img/coca-cola-logo.jpg">
-      <img alt="vedgbg logo" class="partnerimg" src="img/VedGBG.png">
-      <img alt="mcdonalds logo" class="partnerimg" src="img/mcdonalds.png">
-      <img alt="coca cola logo" class="partnerimg" src="img/coca-cola-logo.jpg">
-      <img alt="vedgbg logo" class="partnerimg" src="img/VedGBG.png">
-      <img alt="mcdonalds logo" class="partnerimg" src="img/mcdonalds.png">
-      <img alt="coca cola logo" class="partnerimg" src="img/coca-cola-logo.jpg">
-
+    
+    <h2>Mina projekt</h2>
+    <div id="showcase">
+        <div class="projekt unv">
+          <img src="/img/Code.jpg", alt="">
+          <h1>Leos kodpartner1</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae deleniti ut quis. Debitis omnis quis labore odio placeat blanditiis perspiciatis nisi, accusantium incidunt laudantium, nulla numquam tenetur ullam rerum adipisci!</p>
+        </div>
+        <div class="projekt unv">
+          <img src="/img/Code.jpg", alt="">
+          <h1>Leos kodpartner1</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae deleniti ut quis. Debitis omnis quis labore odio placeat blanditiis perspiciatis nisi, accusantium incidunt laudantium, nulla numquam tenetur ullam rerum adipisci!</p>
+        </div>
+        <div class="projekt" id="swipeZone">
+          <img src="/img/Code.jpg", alt="">
+          <h1>Leos kodpartner1</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae deleniti ut quis. Debitis omnis quis labore odio placeat blanditiis perspiciatis nisi, accusantium incidunt laudantium, nulla numquam tenetur ullam rerum adipisci!</p>
+          <p class="SwipeP">Swipe to see more!</p>
+        </div>
+        
+        
+    
+       
+      
+      
+      
+      
     </div>
     </section>
   <footer>
@@ -71,7 +92,7 @@
       
       <p class="copy">© 2025 LeoDahl.se. Alla rättigheter reserverade.</p>
   </footer>
-  
+  <script src="js/Swipe.js"></script>
 </body>
 </html>
 

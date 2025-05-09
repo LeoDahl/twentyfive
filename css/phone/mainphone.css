@@ -9,12 +9,12 @@
             "pa pa pa"
             "ft ft ft";
         background-color: hsla(0, 0%, 100%, 1);
-        background-color: #fcecf4;
+
         background-repeat: no-repeat;
         background-size: cover;
-        grid-template-rows: 7vh 93vh 100vh 60vh 30vh;
+        grid-template-rows: 7vh 93vh 110vh auto 30vh;
         width: 100%;
-        height: 100%;
+        height: 140vh;
     }
 
     #partnerGrid {
@@ -22,10 +22,7 @@
         height: 50%;
     }
 
-    .unv {
-        visibility: hidden;
-    }
-
+    
     header {
         display: flex;
         justify-content: space-between;
@@ -60,6 +57,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: black;
     }
+    
 
     #mainText {
         width: 100%;
@@ -180,9 +178,10 @@
     }
 
     #showcase {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 40%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
     }
@@ -191,11 +190,11 @@
         background-color: white;
         box-shadow: 3px 1px 4px 4px rgba(0, 0, 0, 0.2);
         border-radius: 35px;
-        height: 550px;
-        width: 95%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         display: flex;
         flex-direction: column;
+        margin: 5%;
     }
 
     .projekt img {
@@ -227,6 +226,14 @@
         font-family: Manrope, Helvetica, sans-serif;
         margin-left: 20px;
         font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+    
+    .SwipeP {
+        text-align: center;
+        font-weight: 700;
+        font-size: clamp(1em, 1.5em, 2em) !important;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
     }
 
     .CalltoAction {
@@ -278,7 +285,9 @@
     .promise {
         background-color: #ccbcec;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+        grid-area: se;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -290,13 +299,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        
     }
 
     h2 {
         font-family: Manrope;
         text-align: center;
-        font-size: clamp(1rem, 2.5vw, 2rem);
+        font-size: clamp(1rem, 2.5vw, 5rem);
         color: rgb(18, 18, 18);
     }
 
@@ -310,9 +319,11 @@
         height: 90%;
     }
 
+    .promise h2,
     .Services h2,
     .partners h2 {
-        font-size: clamp(1rem, 2.5vw, 2rem);
+        margin: 10px;
+        font-size: clamp(1.6rem, 2.5vw, 4rem);
     }
 
     .partnerimg {
@@ -346,4 +357,8 @@
         font-weight: bold;
         text-align: center;
     }
+}
+
+.unv {
+    display: none;
 }
